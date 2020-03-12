@@ -79,7 +79,7 @@ class Pillar {
 
 class Bird {
   constructor() {
-    this.xPos = 300;
+    this.xPos = window.innerHeight / 5;
     this.yPos = window.innerHeight / 2;
     this.ySpeed = -10;
   }
@@ -126,3 +126,4 @@ function keyPressed() {
 function gameOver() {
   isGameOver = true;
 }
+
