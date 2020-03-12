@@ -8,6 +8,7 @@ let zoomLevel = 0.5;
 let nbPillarsClosed = 0;
 let worldWidth = window.innerWidth;
 let worldHeight = window.innerHeight;
+let score = 0;
 
 function setup() {
   createCanvas(worldWidth, worldHeight);
