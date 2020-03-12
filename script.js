@@ -122,12 +122,9 @@ function mousePressed() {
 
 function keyPressed() {
   bird.jump();
-  
-  
 }
 
 function gameOver() {
   isGameOver = true;
-
 }
 
