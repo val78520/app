@@ -31,6 +31,10 @@ function draw() {
   for (i = 0; i < nbPillars; i++) {
     pillars[i].drawPillar();
   }
+  
+  for (i = 0; i < score; i++) {
+    
+  }
 
   bird.drawBird();
   bird.move();
@@ -85,7 +89,7 @@ class Pillar {
 
 class Bird {
   constructor() {
-    this.xPos = window.innerHeight / 5;
+    this.xPos = window.innerWidth / 3;
     this.yPos = window.innerHeight / 2;
     this.ySpeed = -10;
   }
