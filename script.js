@@ -185,7 +185,7 @@ function showGameOver() {
     button.position((window.innerWidth/2)-120, (window.innerHeight/10)*5);
     button.style('border-radius', '5px');
     button.size(240,50);
-    button.mousePressed(lancer);
+    button.mouseClicked(lancer);
   }
   else {
     textSize(28);
@@ -208,7 +208,7 @@ function showGameOver() {
     button2.style('border-radius', '5px');
     button.size(240,50);
     button2.size(240,50);
-    button.mousePressed(lancer);
+    button.mouseClicked(lancer);
   }
   
 
