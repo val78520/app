@@ -6,8 +6,8 @@ let pillardWidth = 200;
 let isGameOver = false;
 let zoomLevel = 0.5;
 let nbPillarsClosed = 0;
-let worldWidth = 1200;
-let worldHeight = 600;
+let worldWidth = window.innerWidth;
+let worldHeight = window.innerHeight;
 
 function setup() {
   createCanvas(worldWidth, worldHeight);
@@ -40,7 +40,7 @@ function draw() {
 class Pillar {
   constructor(i) {
     this.spaceHeight = 250;
-    this.height = random(200, 300);
+    this.height = random(0.3 * window.innerHeight, 0.4 * window.innerHeight);
     this.width = pillardWidth;
     this.xPos = initialSpace + i * this.width;
     this.index = i;
@@ -80,7 +80,7 @@ class Pillar {
 class Bird {
   constructor() {
     this.xPos = 300;
-    this.yPos = 400;
+    this.yPos = window.innerHeight / 2;
     this.ySpeed = -10;
   }
   drawBird() {
@@ -113,6 +113,10 @@ class Bird {
   isOut() {
     return bird.yPos >= worldHeight;
   }
+}
+
+function mousePressed() {
+  bird.jump();
 }
 
 function keyPressed() {
