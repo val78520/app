@@ -1,7 +1,7 @@
 let pillars = [];
 let initialSpace = 900;
 let bird;
-let nbPillars = 8;
+let nbPillars = 100;
 let pillardWidth = 200;
 let isGameOver = false;
 let zoomLevel = 0.5;
