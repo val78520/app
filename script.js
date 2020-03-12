@@ -202,7 +202,7 @@ function showGameOver() {
 
     button = createButton('Rejouer');
     button2 = createButton('Partager');
-    button.position((window.innerWidth/2)-120, (window.innerHeight/20)*14.4);
+    button.position((window.innerWidth/2)-120, (window.innerHeight/20)*14.2);
     button2.position((window.innerWidth/2)-120, (window.innerHeight/20)*12.3);
     button.style('border-radius', '5px');
     button2.style('border-radius', '5px');
