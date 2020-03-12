@@ -21,6 +21,7 @@ function setup() {
 
 function draw() {
   background(220);
+  
   if (isGameOver) {
     for (i = 0; i < nbPillarsClosed; i++) {
       pillars[i].drawPillarFullHeight();
@@ -36,6 +37,9 @@ function draw() {
   bird.drag();
   if (bird.isOut()) gameOver();
   if (bird.isCollision()) gameOver();
+  textSize(42);
+  let myText = score + "€" ;
+  text(myText, window.innerWidth/2, 70);
 }
 
 class Pillar {
@@ -76,6 +80,7 @@ class Pillar {
     let computedWidth = min(200, worldWidth / nbPillarsClosed);
     rect(this.index * computedWidth, 0, computedWidth, worldHeight);
   }
+  
 }
 
 class Bird {
