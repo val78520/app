@@ -177,9 +177,9 @@ function showGameOver() {
     text("Deuxième chance !",(window.innerWidth/2)-125, (window.innerHeight/10)*3);
     textSize(12);
     text("Changez l'usage, créez, démarquez",(window.innerWidth/2)-100, (window.innerHeight/20)*7);
-    text("et responsabilisez :",(window.innerWidth/2)-50, (window.innerHeight/20)*7.3);
-    text("Chaque instant passé à créer votre pièce",(window.innerWidth/2)-110, (window.innerHeight/20)*7.7);
-    text("unique, vous reversez un don pour une association",(window.innerWidth/2)-135, (window.innerHeight/20)*8);
+    text("et responsabilisez :",(window.innerWidth/2)-50, (window.innerHeight/20)*7.4);
+    text("Chaque instant passé à créer votre pièce",(window.innerWidth/2)-110, (window.innerHeight/20)*7.8);
+    text("unique, vous reversez un don pour une association",(window.innerWidth/2)-135, (window.innerHeight/20)*8.2);
     fill(black);
     button = createButton('Rejouer');
     button.position((window.innerWidth/2)-120, (window.innerHeight/10)*5);
@@ -194,27 +194,25 @@ function showGameOver() {
     text(myText, (window.innerWidth/2)-40, (window.innerHeight/10)*3+70);
     textSize(12);
     text("Changez l'usage, créez, démarquez",(window.innerWidth/2)-100, (window.innerHeight/20)*9);
-    text("et responsabilisez :",(window.innerWidth/2)-50, (window.innerHeight/20)*9.3);
-    text("Chaque instant passé à créer votre pièce",(window.innerWidth/2)-110, (window.innerHeight/20)*9.7);
-    text("unique, vous reversez un don pour une association",(window.innerWidth/2)-135, (window.innerHeight/20)*10);
+    text("et responsabilisez :",(window.innerWidth/2)-50, (window.innerHeight/20)*9.5);
+    text("Chaque instant passé à créer votre pièce",(window.innerWidth/2)-110, (window.innerHeight/20)*10);
+    text("unique, vous reversez un don pour une association",(window.innerWidth/2)-135, (window.innerHeight/20)*10.5);
 
-    text("Voici votre création !",(window.innerWidth/2)-55, (window.innerHeight/20)*11.6);
+    text("Voici votre création !",(window.innerWidth/2)-55, (window.innerHeight/20)*11);
 
     button = createButton('Rejouer');
     button2 = createButton('Partager');
-    button.position((window.innerWidth/2)-120, (window.innerHeight/20)*14);
-    button2.position((window.innerWidth/2)-120, (window.innerHeight/20)*12.5);
+    button.position((window.innerWidth/2)-120, (window.innerHeight/20)*14.4);
+    button2.position((window.innerWidth/2)-120, (window.innerHeight/20)*12.3);
     button.style('border-radius', '5px');
     button2.style('border-radius', '5px');
     button.size(240,50);
     button2.size(240,50);
     button.mousePressed(lancer);
-
   }
   
 
 }
-
 function lancer() {
   location.reload();
 }
