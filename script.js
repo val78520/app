@@ -117,13 +117,17 @@ class Bird {
 
 function mousePressed() {
   bird.jump();
+  
 }
 
 function keyPressed() {
   bird.jump();
+  
+  
 }
 
 function gameOver() {
   isGameOver = true;
+
 }
 
