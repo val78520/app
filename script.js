@@ -14,6 +14,7 @@ let score = 0;
 let input, button;
 let img;
 let logo;
+let arrow;
 let colors = ['#E30044', '#91002C', '#F4A2BB', '#273043','#898E98','#0F1219','#C62E5C','#C4C6CB','#770024'];
 let myColor = random(colors);
 
@@ -23,6 +24,7 @@ let myColor = random(colors);
 function preload() {
   img = loadImage('assets/aiguille.png');
   logo = loadImage('assets/logo.jpg');
+  arrow = loadImage('assets/arrow.png');
 }
 
 function setup() {
@@ -209,6 +211,7 @@ function showGameOver() {
     button.size(240,50);
     button2.size(240,50);
     button.mouseClicked(lancer);
+    image(logo,(window.innerWidth/20)*18,window.innerWidth/2,348,298);
   }
   
 
