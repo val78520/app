@@ -211,7 +211,7 @@ function showGameOver() {
     button.size(240,50);
     button2.size(240,50);
     button.mouseClicked(lancer);
-    image(logo,(window.innerWidth/20)*18,window.innerWidth/2,348,298);
+    image(arrow,(window.innerWidth/20)*18,window.innerWidth/2,348,298);
   }
   
 
