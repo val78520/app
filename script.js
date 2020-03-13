@@ -79,7 +79,7 @@ class Pillar {
   }
   drawPillar() {
     this.xPos -= 4;
-    
+    noStroke();
     if (this.xPos + this.width <= bird.xPos) {
       if (!this.closing) nbPillarsClosed++;
       if (!this.closing) score++;
